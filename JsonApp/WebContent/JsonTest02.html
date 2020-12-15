@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	var myJsonObject2 =
+	{
+			"test" : "hello"
+			/* "test" : "new test" */
+	}
+
+</script>
+
+</head>
+<body>
+	
+<form action="">
+
+	<!-- <input type="button" value="click" onclick="alert(myJsonObject)" /> -->
+	<!-- → [object Object] -->
+	
+	<!-- <input type="button" value="click" onclick="alert(typeof myJsonObject)" /> -->
+	<!-- → object -->
+	
+	<!-- ------------------------------------------------------ JsonTest01 -->
+	
+	
+	<input type="button" value="click" onclick="alert(myJsonObject2.test)" />
+	<!-- → hello -->
+	
+	<input type="button" value="click" onclick="myJsonObject2.test='new test'; alert(myJsonObject2.test)" />
+	<!-- → new test -->
+
+</form>
+	
+</body>
+</html>
